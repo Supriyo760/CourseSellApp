@@ -13,7 +13,7 @@ userRouter.post("/signin",function(req,res){
     })
 })
 
-userRouter.post("/purchases",function(req,res){
+userRouter.get("/purchases",function(req,res){
     res.json({
         message:"signup endpoint"
     })
