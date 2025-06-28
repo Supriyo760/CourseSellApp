@@ -6,7 +6,7 @@ const ObjectId=mongoose.Types.ObjectId;
 const userSchema = new Schema({
     email:{type:String, unique:true},
     password:String,
-    fineName:String,
+    firstName:String,
     lastName:String
 });
 
@@ -35,7 +35,7 @@ const adminModel = mongoose.model("admin",adminSchema);
 const courseModel = mongoose.model("course",courseSchema);
 const purchaseModel = mongoose.model("purchase",purchaseSchema);
 
-module.export={
+module.exports={
     userModel,
     adminModel,
     courseModel,
