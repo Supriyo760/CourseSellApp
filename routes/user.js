@@ -1,3 +1,4 @@
+const { userMiddleware } = require("../middleware/user");
 const{Router}=require("express");
 const userRouter = Router();
 const { userModel } = require("../db");
